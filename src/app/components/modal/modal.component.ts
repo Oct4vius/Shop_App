@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import { GeneralService } from 'src/app/services/general.service';
 
@@ -10,12 +11,13 @@ import { GeneralService } from 'src/app/services/general.service';
 })
 export class ModalComponent {
 
-  constructor(private generalService: GeneralService){}
+  constructor(private generalService: GeneralService, private router: Router){}
 
   xIcon = faX
 
-  closeLogin(){
+  closeModal(){
     this.generalService.showModal = false
+    this.router.navigate(['home'])
   }
 
 }

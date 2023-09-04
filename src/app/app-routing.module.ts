@@ -8,9 +8,12 @@ import { TopbarComponent } from './components/topbar/topbar.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
 
 const routes: Routes = [
-  {path: 'signup', component: SignupComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'addproduct', component: AddProductComponent},
+  {path: 'home', component: HomeComponent, children:[
+    {path: 'login', component: LoginComponent},
+    {path: 'signup', component: SignupComponent},
+    {path: 'addproduct', component: AddProductComponent},
+  
+  ]},
 
 ];
 
