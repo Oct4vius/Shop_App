@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GeneralService {
 
-  showModal = true;
+  showModal = false;
 
   constructor() { }
 }
