@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    height: 20;
+}
+
+.inicio{
+
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1));
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.layout {
+    width: 75%;
+    height: 90;
+    padding: 20px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    border: 5px solid linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1));
+    border-radius: 5px;
+}
+
+.producto{
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(54, 46, 46);
+    color: white;
+    border: 3px solid white;
+    box-shadow: -4px 4px 1px rgba(255, 255, 255, 0.5);
+}
+
+.producto p{
+    text-align: start;
+}
+
+.producto label{
+    font-weight: bold;
+
+}
+
+.producto img{
+    max-width: 300px;
+    width: auto;
+    height: auto;
+}
+
+.producto button{
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+    color: rgb(9, 236, 9);
+    transition: 0.3s ease-in-out;
+    padding: 5px;
+}
+
+.producto button:hover{
+    background: rgb(9, 236, 9);
+    color: rgb(54, 46, 46);
+}
+
+.producto button:active{
+    background-color: transparent;
+    color: rgb(9, 236, 9);
+}
+
+.carrito{
+    background: rgb(54, 46, 46);
+    width: 25%;
+    min-height: 90vh;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    color: white;
+    border: 3px solid white;
+    box-shadow: -4px 4px 1px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    
+}
+
+.carrito ul{
+    list-style: none;
+}
+
+.carrito ul li{
+    margin: 10px;
+    background: rgba(30,35,38,.8);
+    padding: 10px;
+    text-align: start;
+    border: solid;
+    box-shadow: 4px 4px 1px grey;
+}
+
+.carrito ul li p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carrito ul li button{
+    padding: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    color: red
+}
+
+.carrito ul li button:hover{
+    background: red;
+    color: rgba(30,35,38,.8);
+}

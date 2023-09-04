@@ -1,0 +1,67 @@
+/* #1e2326 */
+.contenedor-header{
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border: 1px solid red;
+    border-radius: 20%;
+    padding: 5px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.contenedor-header header .logo a:hover{
+    background-color: white;
+    color: red;
+}
+
+.contenedor-header header .logo a:active{
+    background-color: red;
+    color: white;
+}
+
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    font-family: 'work sans';
+    text-align: none;
+    color: #100423;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.login{
+    background-color: #100423;
+}

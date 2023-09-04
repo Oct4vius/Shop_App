@@ -1,0 +1,18 @@
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a>Tienda</a>
+        </div>
+        <nav id="nav" >
+            <ul>
+                <li><a >NOMBRE</a></li>
+                <li><a >CALLE</a></li>
+                <li><a (click)="openLogin()">INICIAR SESIÓN</a></li>
+                <li><a ><fa-icon [icon]="faIcon"></fa-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <modal *ngIf="generalService.showModal"/>
+
+</div>
