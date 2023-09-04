@@ -124,3 +124,22 @@
     background: red;
     color: rgba(30,35,38,.8);
 }
+
+#add-product{
+    position: absolute;
+    top: 87px;
+    left: 25px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    transition: 0.2s all;
+    cursor: pointer;
+    background-color: rgba(9, 236, 9);
+}
+
+#add-product:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}

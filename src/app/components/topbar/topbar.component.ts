@@ -15,7 +15,12 @@ export class TopbarComponent implements OnInit{
   constructor(private router: Router, public generalService: GeneralService) {}
 
   openLogin(){
+    this.router.navigate(['login'])
     this.generalService.showModal = true;
+  }
+
+  navigateInsideModal(route: string) {
+    this.generalService.navigateInsideModal(route);
   }
 
   ngOnInit() {

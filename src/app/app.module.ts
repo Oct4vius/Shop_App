@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { ModalComponent } from './components/modal/modal.component';
+import { AddProductComponent } from './components/add-product/add-product.component';
+
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { ModalComponent } from './components/modal/modal.component';
     LoginComponent,
     SignupComponent,
     ModalComponent,
+    AddProductComponent,
+
   ],
   imports: [
     BrowserModule,

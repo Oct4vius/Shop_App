@@ -62,6 +62,12 @@
     text-decoration: underline;
 }
 
+.contenedor-header header nav ul li #info{
+    text-decoration: none;
+    cursor: default;
+    
+}
+
 .login{
     background-color: #100423;
 }

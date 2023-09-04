@@ -5,11 +5,12 @@ import { ModalComponent } from './components/modal/modal.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { AddProductComponent } from './components/add-product/add-product.component';
 
 const routes: Routes = [
   {path: 'signup', component: SignupComponent},
   {path: 'login', component: LoginComponent},
-  {path: '', redirectTo:'login', pathMatch: 'full'}
+  {path: 'addproduct', component: AddProductComponent},
 
 ];
 
